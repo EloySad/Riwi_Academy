@@ -38,3 +38,5 @@ CREATE TABLE IF NOT EXISTS grades (
 FOREIGN KEY (students) REFERENCES students(id),
 FOREIGN KEY (courses) REFERENCES courses(id)
 );
+
+![](/home/riwip5-030/Documents/EloyBezzos/Screenshot from 2024-08-05 21-35-57.png)
