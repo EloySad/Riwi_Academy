@@ -18,7 +18,8 @@ public class Main {
                     1.Manage students \n
                     2.Manage courses \n
                     3.Manage grades \n
-                    4.Manage registrations
+                    4.Manage registrations \n
+                    5.Exit
                     """);
 
             switch (menu){
@@ -26,7 +27,11 @@ public class Main {
                     String menu1;
                     do {
                         menu1 = JOptionPane.showInputDialog("""
-                                1.Create student
+                                1.Create student \n
+                                2.Update student \n
+                                3.View students \n
+                                4.Delete student \n
+                                5.Back
                                 """);
                         switch (menu1){
                             case "1" -> {
@@ -51,7 +56,7 @@ public class Main {
                         }
                     }
 
-                    while (!menu1.equals("2"));
+                    while (!menu1.equals("5"));
                 }
             }
         }while (!menu.equals("5"));

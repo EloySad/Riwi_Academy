@@ -45,7 +45,7 @@ public class StudentsModelImp implements IModelStudents {
     public boolean update(StudentsEntity request) {
 
         Connection connection = ConfigDB.conect();
-        String query = "UPDATE coder SET document_id = ?, name = ?, last_name = ?, email = ?, fk_courses = ?, status = ?;";
+        String query = "UPDATE student SET document_id = ?, name = ?, last_name = ?, email = ?, fk_courses = ?, status = ?;";
 
         try {
 
@@ -95,7 +95,7 @@ public class StudentsModelImp implements IModelStudents {
                 students.add(student);
             }
         }catch (Exception e){
-            System.out.println("No se pudieron treaer los coder");
+            System.out.println("Students could not be brought");
         }finally {
             ConfigDB.close();
         }
